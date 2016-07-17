@@ -1,0 +1,279 @@
+// Custom variables
+@import "variables";
+@import "grid";
+@import "header";
+@import "footer";
+@import "fonts";
+
+// * {
+//   -webkit-transition: .5s;
+//   -moz-transition: .5s;
+//   -ms-transition: .5s;
+//   -o-transition: .5s;
+//   transition: .5s;
+// }
+
+html {
+  font-size: 62.5%;
+  font-family: 'Qanelas-Regular', sans-serif;
+  box-sizing: border-box;
+  -webkit-locale: bg;
+}
+
+body {
+	font-size:99%;
+  background-color: white;
+  margin: 0;
+}
+//
+// ::selection {
+//     background: $color-gray;
+//     color: $color-blue;
+//     text-shadow: none;
+//  }
+
+////////////////////////////////////////////////////////////////////////////////
+//Responsive images abd video
+////////////////////////////////////////////////////////////////////////////////
+ .img-responsive {
+   display: block;
+   max-width: 100%;
+   height: auto; }
+
+ .center-block {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   }
+
+   .delimitador{
+   	width:100%;
+   	margin:auto;
+   	margin-bottom: 3.5em;
+   }
+   .contenedor{
+   	height:0px;
+   	width:100%;
+   	/*max-width:560px; /* Así establecemos el ancho máximo (si lo queremos) */
+   	padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+   	position:relative;
+   }
+
+   iframe{
+   		position:absolute;
+   		height:100%;
+   		width:100%;
+   		top:0px;
+   		left:0px;
+   }
+
+////////////////////////////////////////////////////////////////////////////////
+//Main image and slogan
+////////////////////////////////////////////////////////////////////////////////
+.leadimage{
+  margin-top: 62px;
+  background-color: $color-blue;
+  height: 800px;
+  margin-bottom: 184px;
+}
+
+.slogan {
+  margin-top: -661px;
+  margin-left: 110px;
+  // padding-bottom: 361px;
+  z-index: 100;
+  position: relative;
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//Chambers
+////////////////////////////////////////////////////////////////////////////////
+.branddescription {
+    font-family: 'Qanelas-Black', 'sans-serif';
+  	font-weight: 400;
+    font-size: 1.8em;
+    line-height: 160%;
+    text-align: center;
+    color: $color-black;
+    margin:0 auto;
+    padding: 3.6rem 1.5rem 4.4rem 1.5rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logos_two_row1 {
+  display: none;
+}
+
+.logos_two_row2 {
+  display: none;
+}
+
+a.branding:hover {
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.brandlinks, .brandlinks:visited {
+  color: $color-red;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.brandlinks:hover {
+  color: darken( $color-red, 10% );
+}
+
+.moreone {
+  display: block;
+  font-family: 'Qanelas-Black', 'sans-serif';
+  font-weight: 400;
+  font-size: 1.8em;
+	background-color: $color-red;
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
+  border: 0.5rem solid $color-red;
+	color: $color-gray;
+  text-decoration: none;
+	cursor: pointer;
+	margin: 0 auto;
+	text-align: center;
+	width: 7em;
+  transition: .2s;
+}
+
+.moreone:hover {
+	background-color: darken( $color-red, 10% );
+	color: $color_gray;
+  border: 0.5rem solid darken( $color-red, 10% );
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//Type
+////////////////////////////////////////////////////////////////////////////////
+
+h1 {
+  font-family: 'Qanelas-Black', 'sans-serif';
+  // font-weight: 400;
+  font-size: 3.6em;
+  line-height: 1%;
+  // margin-bottom: 2em;
+	color: $color-black;
+  // text-align: center;
+}
+
+.subtitle {
+  font-family: 'Qanelas-Regular', 'sans-serif';
+  font-size: 2.4em;
+}
+
+h2 {
+  font-family: 'Qanelas-Bold', 'sans-serif';
+  font-size: 2.4em;
+  color: $color-black
+}
+
+h3 {
+  font-family: 'Qanelas-Bold', 'sans-serif';
+  font-size: 2.4em;
+  color: $color-blue;
+}
+
+.info {
+  font-family: 'Qanelas-Light', 'sans-serif';
+  font-size: 1.8em;
+  color: $color-black;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//Responsive
+////////////////////////////////////////////////////////////////////////////////
+
+
+// @media (max-width: 967px) {
+//   .partsimage {
+//     height: 450px;
+//   }
+//   // .slogans {
+//   //   top: 190px;
+//   // }
+// }
+// @media (max-width: 847px) {
+//   .partsimage {
+//     height: 400px;
+//   }
+//   .logos {
+//     display: none;
+//   }
+//   .logos_two_row1 {
+//     display: flex;
+//     justify-content: space-around;
+//     margin-bottom: 3em;
+//   }
+//   .logos_two_row2 {
+//     display: flex;
+//     justify-content: space-around;
+//   }
+// }
+//
+// @media (max-width: 673px) {
+//   h1 {
+//     font-size: 2.4em;
+//   }
+//
+//   h2 {
+//     font-size: 1.7em;
+//   }
+//   .slogans {
+//     padding-top: 60px;
+//   }
+//   .gray {
+//     width: 288px;
+//   }
+//   .red {
+//     width: 250px;
+//   }
+//   .partsimage {
+//     height: 350px;
+//   }
+//   .logo {
+//     height: 7.2em;
+//     width: 8.7em;
+//   }
+//   .logo:hover {
+//     height: 7.2em;
+//     width: 8.7em;
+//   }
+//   .logos_two_row1, .logos_two_row2 {
+//     display: block;
+//     padding-left: 70px;
+//     padding-right: 70px;
+//   }
+//   .dln {
+//     margin-bottom: 4em;
+//   }
+//   .branddescription {
+//     padding-top: 1rem;
+//   }
+//   #map-canvas {
+//     height: 30em;
+//   }
+// }
+
+@media (max-width: 433px) {
+  .logo {
+    height: 5em;
+    width: 6.5em;
+  }
+  .logo:hover {
+    height: 5em;
+    width: 6.5em;
+  }
+}
