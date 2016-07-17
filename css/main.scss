@@ -34,6 +34,7 @@ body {
 
 .background-gray {
   background-color: $color-gray;
+  padding: 3px;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -78,13 +79,12 @@ body {
   margin-top: 62px;
   background-color: $color-blue;
   height: 720px;
-  margin-bottom: 184px;
+  // margin-bottom: 184px;
 }
 
 .slogan {
-  margin-top: -661px;
+  margin-top: 0;
   margin-left: 110px;
-  // padding-bottom: 361px;
   z-index: 100;
   position: relative;
 
