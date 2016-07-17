@@ -530,13 +530,19 @@ iframe {
 .leadimage {
   margin-top: 62px;
   background-color: #6C79B7;
-  height: 720px; }
+  height: 730px; }
 
 .slogan {
   margin-top: 0;
-  margin-left: 110px;
   z-index: 100;
   position: relative; }
+
+.clear {
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border: 0;
+  clear: both; }
 
 .branddescription {
   font-family: 'Qanelas-Black', 'sans-serif';
@@ -573,27 +579,26 @@ a.branding:hover {
 .brandlinks:hover {
   color: #bb2d22; }
 
-.moreone {
-  display: block;
-  font-family: 'Qanelas-Black', 'sans-serif';
-  font-weight: 400;
-  font-size: 1.8em;
-  background-color: #DA4136;
+.morebtn {
+  display: inline-block;
+  font-family: 'Qanelas-Regular', 'sans-serif';
+  font-size: 1.6em;
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
-  border: 0.5rem solid #DA4136;
-  color: #EEEEEE;
+  border: 1px solid #DA4136;
+  border-radius: 6px;
+  color: #DA4136;
   text-decoration: none;
   cursor: pointer;
   margin: 0 auto;
   text-align: center;
-  width: 7em;
+  width: 14em;
   transition: .2s; }
 
-.moreone:hover {
+.morebtn:hover {
   background-color: #bb2d22;
   color: #EEEEEE;
-  border: 0.5rem solid #bb2d22; }
+  border: 1px solid #bb2d22; }
 
 h1 {
   font-family: 'Qanelas-Black', 'sans-serif';
@@ -620,6 +625,9 @@ h3 {
   font-family: 'Qanelas-Light', 'sans-serif';
   font-size: 1.8em;
   color: #111111; }
+
+hr {
+  border-top: 2px solid #EEEEEE; }
 
 @media (max-width: 433px) {
   .logo {

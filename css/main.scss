@@ -78,16 +78,24 @@ body {
 .leadimage{
   margin-top: 62px;
   background-color: $color-blue;
-  height: 720px;
+  height: 730px;
   // margin-bottom: 184px;
 }
 
 .slogan {
   margin-top: 0;
-  margin-left: 110px;
+  // margin-left: 110px;
   z-index: 100;
   position: relative;
 
+}
+
+.clear {
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border: 0;
+  clear: both;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -135,28 +143,28 @@ a.branding:hover {
   color: darken( $color-red, 10% );
 }
 
-.moreone {
-  display: block;
-  font-family: 'Qanelas-Black', 'sans-serif';
-  font-weight: 400;
-  font-size: 1.8em;
-	background-color: $color-red;
+.morebtn {
+  display: inline-block;
+  font-family: 'Qanelas-Regular', 'sans-serif';
+  font-size: 1.6em;
+	// background-color: $color-red;
 	padding-top: 0.6rem;
 	padding-bottom: 0.6rem;
-  border: 0.5rem solid $color-red;
-	color: $color-gray;
+  border: 1px solid $color-red;
+  border-radius: 6px;
+	color: $color-red;
   text-decoration: none;
 	cursor: pointer;
 	margin: 0 auto;
 	text-align: center;
-	width: 7em;
+	width: 14em;
   transition: .2s;
 }
 
-.moreone:hover {
+.morebtn:hover {
 	background-color: darken( $color-red, 10% );
 	color: $color_gray;
-  border: 0.5rem solid darken( $color-red, 10% );
+  border: 1px solid darken( $color-red, 10% );
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -195,6 +203,10 @@ h3 {
   font-family: 'Qanelas-Light', 'sans-serif';
   font-size: 1.8em;
   color: $color-black;
+}
+
+hr {
+  border-top: 2px solid $color-gray;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
