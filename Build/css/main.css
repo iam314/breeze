@@ -529,13 +529,16 @@ iframe {
 
 .leadimage {
   margin-top: 62px;
-  background-color: #6C79B7;
-  height: 730px; }
+  background-color: #6C79B7; }
 
 .slogan {
   margin-top: 0;
   z-index: 100;
   position: relative; }
+
+.maiimage {
+  position: absolute;
+  top: 62px; }
 
 .clear {
   height: 0;

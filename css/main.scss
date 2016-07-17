@@ -78,7 +78,7 @@ body {
 .leadimage{
   margin-top: 62px;
   background-color: $color-blue;
-  height: 730px;
+  // height: 461px;
   // margin-bottom: 184px;
 }
 
@@ -87,7 +87,12 @@ body {
   // margin-left: 110px;
   z-index: 100;
   position: relative;
+}
 
+.maiimage {
+  position: absolute;
+    // margin-top: 62px;
+  top: 62px;
 }
 
 .clear {
