@@ -32,6 +32,10 @@ body {
 //     text-shadow: none;
 //  }
 
+.background-gray {
+  background-color: $color-gray;
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 //Responsive images abd video
 ////////////////////////////////////////////////////////////////////////////////
@@ -73,7 +77,7 @@ body {
 .leadimage{
   margin-top: 62px;
   background-color: $color-blue;
-  height: 800px;
+  height: 720px;
   margin-bottom: 184px;
 }
 
@@ -177,7 +181,8 @@ h1 {
 h2 {
   font-family: 'Qanelas-Bold', 'sans-serif';
   font-size: 2.4em;
-  color: $color-black
+  color: $color-black;
+  text-align: center;
 }
 
 h3 {
