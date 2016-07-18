@@ -509,8 +509,7 @@ body {
 
 .delimitador {
   width: 100%;
-  margin: auto;
-  margin-bottom: 3.5em; }
+  margin: auto; }
 
 .contenedor {
   height: 0px;
@@ -529,16 +528,15 @@ iframe {
 
 .leadimage {
   margin-top: 62px;
-  background-color: #6C79B7; }
+  background: linear-gradient(to bottom, #6C79B7 491px, white 25px); }
 
 .slogan {
-  margin-top: 0;
   z-index: 100;
-  position: relative; }
-
-.maiimage {
   position: absolute;
   top: 62px; }
+
+.maiimage {
+  position: relative; }
 
 .clear {
   height: 0;
@@ -607,11 +605,14 @@ h1 {
   font-family: 'Qanelas-Black', 'sans-serif';
   font-size: 3.6em;
   line-height: 1%;
-  color: #111111; }
+  color: #111111;
+  padding-left: 110px;
+  padding-top: 24px; }
 
 .subtitle {
   font-family: 'Qanelas-Regular', 'sans-serif';
-  font-size: 2.4em; }
+  font-size: 2.4em;
+  padding-left: 110px; }
 
 h2 {
   font-family: 'Qanelas-Bold', 'sans-serif';
@@ -630,7 +631,7 @@ h3 {
   color: #111111; }
 
 hr {
-  border-top: 2px solid #EEEEEE; }
+  border-top: 1px solid #EEEEEE; }
 
 @media (max-width: 433px) {
   .logo {

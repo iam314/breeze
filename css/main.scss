@@ -54,7 +54,7 @@ body {
    .delimitador{
    	width:100%;
    	margin:auto;
-   	margin-bottom: 3.5em;
+   // 	margin-bottom: 3.5em;
    }
    .contenedor{
    	height:0px;
@@ -77,22 +77,26 @@ body {
 ////////////////////////////////////////////////////////////////////////////////
 .leadimage{
   margin-top: 62px;
-  background-color: $color-blue;
-  // height: 461px;
+  // background-color: $color-blue;
+  background: linear-gradient(to bottom, $color-blue 491px, white 25px);
+  // margin-bottom: -300px;
+  // height: 65%  ;
   // margin-bottom: 184px;
 }
 
+
 .slogan {
-  margin-top: 0;
-  // margin-left: 110px;
+  // margin-top: 0;
+  // // margin-left: 110px;
   z-index: 100;
-  position: relative;
+  position: absolute;
+  top: 62px;
 }
 
 .maiimage {
-  position: absolute;
+  position: relative;
     // margin-top: 62px;
-  top: 62px;
+  // top: 62px;
 }
 
 .clear {
@@ -184,11 +188,14 @@ h1 {
   // margin-bottom: 2em;
 	color: $color-black;
   // text-align: center;
+  padding-left: 110px;
+  padding-top: 24px;
 }
 
 .subtitle {
   font-family: 'Qanelas-Regular', 'sans-serif';
   font-size: 2.4em;
+  padding-left: 110px;
 }
 
 h2 {
@@ -211,7 +218,7 @@ h3 {
 }
 
 hr {
-  border-top: 2px solid $color-gray;
+  border-top: 1px solid $color-gray;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
