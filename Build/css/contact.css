@@ -1,25 +1,2 @@
-#map-canvas {
-  height: 43em;
-  margin-bottom: 0.8em; }
-
-.contactpage {
-  text-align: center;
-  margin-bottom: 1.8rem; }
-
-a.contactlinks, .styles {
-  font-family: 'Open Sans', 'sans-serif';
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.8rem;
-  line-height: 150%;
-  color: #111111;
-  text-decoration: none; }
-
-a:hover {
-  color: #DA4136; }
-
-.over {
-  font-style: normal;
-  color: #DA4136;
-  margin-top: 35px;
-  margin-bottom: 20px; }
+.contactbackgroundg {
+  background-color: #DA4136; }

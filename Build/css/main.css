@@ -485,17 +485,20 @@ p {
 html {
   font-size: 62.5%;
   font-family: 'Qanelas-Regular', sans-serif;
-  box-sizing: border-box;
-  -webkit-locale: bg; }
+  box-sizing: border-box; }
 
 body {
   font-size: 99%;
   background-color: white;
   margin: 0; }
 
+::selection {
+  background: #d3d7e9; }
+
 .background-gray {
   background-color: #EEEEEE;
-  padding: 3px; }
+  padding: 3px;
+  margin-top: 24px; }
 
 .img-responsive {
   display: block;
@@ -530,6 +533,9 @@ iframe {
   margin-top: 62px;
   background: linear-gradient(to bottom, #6C79B7 491px, white 25px); }
 
+#splash_screen {
+  cursor: pointer; }
+
 .slogan {
   z-index: 100;
   position: absolute;
@@ -538,92 +544,76 @@ iframe {
 .maiimage {
   position: relative; }
 
-.clear {
-  height: 0;
-  line-height: 0;
-  font-size: 0;
-  border: 0;
-  clear: both; }
-
-.branddescription {
-  font-family: 'Qanelas-Black', 'sans-serif';
-  font-weight: 400;
-  font-size: 1.8em;
-  line-height: 160%;
-  text-align: center;
-  color: #111111;
-  margin: 0 auto;
-  padding: 3.6rem 1.5rem 4.4rem 1.5rem; }
-
-.logos {
-  display: flex;
-  justify-content: space-between; }
-
-.logos_two_row1 {
-  display: none; }
-
-.logos_two_row2 {
-  display: none; }
-
-a.branding:hover {
-  -webkit-filter: grayscale(1);
-  -moz-filter: grayscale(1);
-  -ms-filter: grayscale(1);
-  -o-filter: grayscale(1);
-  filter: grayscale(1); }
-
-.brandlinks, .brandlinks:visited {
-  color: #DA4136;
+.palybtn {
+  position: absolute;
+  z-index: 100;
+  display: block;
+  font-size: 1.6em;
+  background-color: #111111;
+  opacity: 0.5;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 6px;
+  color: white;
   text-decoration: none;
+  cursor: pointer;
+  margin: 17% 35%;
+  text-align: center;
+  width: 4em;
   transition: .2s; }
 
-.brandlinks:hover {
-  color: #bb2d22; }
+.palybtn:hover {
+  background-color: #DA4136;
+  opacity: 1; }
 
 .morebtn {
   display: inline-block;
   font-family: 'Qanelas-Regular', 'sans-serif';
   font-size: 1.6em;
-  padding-top: 0.6rem;
-  padding-bottom: 0.6rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   border: 1px solid #DA4136;
   border-radius: 6px;
   color: #DA4136;
   text-decoration: none;
   cursor: pointer;
-  margin: 0 auto;
+  margin-top: 46px;
   text-align: center;
   width: 14em;
   transition: .2s; }
 
 .morebtn:hover {
-  background-color: #bb2d22;
-  color: #EEEEEE;
-  border: 1px solid #bb2d22; }
+  background-color: #DA4136;
+  color: #EEEEEE; }
 
 h1 {
   font-family: 'Qanelas-Black', 'sans-serif';
   font-size: 3.6em;
-  line-height: 1%;
+  line-height: 100%;
+  margin-bottom: 0;
   color: #111111;
-  padding-left: 110px;
-  padding-top: 24px; }
+  padding-left: 96px;
+  padding-top: 9px; }
 
 .subtitle {
   font-family: 'Qanelas-Regular', 'sans-serif';
   font-size: 2.4em;
-  padding-left: 110px; }
+  padding-left: 96px; }
 
 h2 {
   font-family: 'Qanelas-Bold', 'sans-serif';
   font-size: 2.4em;
   color: #111111;
-  text-align: center; }
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 21px; }
 
 h3 {
   font-family: 'Qanelas-Bold', 'sans-serif';
   font-size: 2.4em;
-  color: #6C79B7; }
+  color: #6C79B7;
+  line-height: 120%;
+  margin-top: 48px; }
 
 .info {
   font-family: 'Qanelas-Light', 'sans-serif';
@@ -632,12 +622,3 @@ h3 {
 
 hr {
   border-top: 1px solid #EEEEEE; }
-
-@media (max-width: 433px) {
-  .logo {
-    height: 5em;
-    width: 6.5em; }
-
-  .logo:hover {
-    height: 5em;
-    width: 6.5em; } }

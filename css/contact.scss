@@ -1,31 +1,30 @@
 // Custom variables
 @import "variables";
 
-#map-canvas {
-  height: 43em;
-  margin-bottom: 0.8em;
+.contactbackgroundg {
+  background-color: $color-red;
 }
 
-.contactpage {
-  text-align: center;
-  margin-bottom: 1.8rem;
-}
-a.contactlinks, .styles {
-    font-family: 'Open Sans', 'sans-serif';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.8rem;
-    line-height: 150%;
-    color: $color-black;
-    text-decoration: none;
-  }
-  a:hover {
-    color: $color-red;
-  }
-
-  .over {
-    font-style: normal;
-    color: $color-red;
-    margin-top: 35px;
-    margin-bottom: 20px;
-  }
+// .contactpage {
+//   text-align: center;
+//   margin-bottom: 1.8rem;
+// }
+// a.contactlinks, .styles {
+//     font-family: 'Open Sans', 'sans-serif';
+//     font-weight: 400;
+//     font-style: normal;
+//     font-size: 1.8rem;
+//     line-height: 150%;
+//     color: $color-black;
+//     text-decoration: none;
+//   }
+//   a:hover {
+//     color: $color-red;
+//   }
+//
+//   .over {
+//     font-style: normal;
+//     color: $color-red;
+//     margin-top: 35px;
+//     margin-bottom: 20px;
+//   }
