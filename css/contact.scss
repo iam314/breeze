@@ -2,9 +2,40 @@
 @import "variables";
 
 .contactbackgroundg {
-  background-color: $color-red;
+  background: linear-gradient(to bottom, $color-red 470px, white 25px);
 }
 
+.cover {
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  background-color: $color-red;
+  height: 220px;
+  width: 350px;
+  top: 250px;
+  left: 450px;
+}
+.arrow {
+  display: block;
+  margin: 0 auto;
+  padding-right: 600px;
+}
+
+h1 {
+  font-family: 'Qanelas-Bold', 'sans-serif';
+  font-size: 3.6em;
+  color: white;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.helloline {
+  font-family: 'Qanelas-Light', 'sans-serif';
+  font-size: 2.1em;
+  color: white;
+}
 // .contactpage {
 //   text-align: center;
 //   margin-bottom: 1.8rem;

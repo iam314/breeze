@@ -21,6 +21,7 @@ nav {
   // margin-bottom: 0.9em;
   margin-left: 2.4em;
 	cursor: pointer;
+  transition: .2s;
 }
 
 .logo:hover {
@@ -28,11 +29,6 @@ nav {
 	background-repeat: no-repeat;
   height: 40px;
 	width: 177px;
-  -webkit-transform: .2s;
-  -moz-transform: .2s;
-  -ms-transform: .2s;
-  -o-transform: .2s;
-  transform: .2s;
 }
 
 // .logoh:hover {
@@ -59,12 +55,12 @@ nav ul li a {
   letter-spacing: 0.03em;
 	color: $color-black_min;
   text-decoration: none;
-  margin-top: 9px
+  margin-top: 9px;
+  transition: .2s;
 }
 
 nav ul li a:hover {
 	color: $color-black;
-  transition: .2s;
 }
 
 .cta {
@@ -73,12 +69,12 @@ nav ul li a:hover {
   border-radius: 6px;
   padding: 10px;
   margin-left: 24px;
+  transition: .2s;
 }
 
 .cta:hover {
   color: white;
   background-color: darken( $color-red, 5% );
-  transition: .2s;
 }
 
 .leftbox {

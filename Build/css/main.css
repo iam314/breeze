@@ -354,18 +354,14 @@ nav {
   float: left;
   margin-top: 1.1em;
   margin-left: 2.4em;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: .2s; }
 
 .logo:hover {
   background-image: url(../img/logo_hover.svg);
   background-repeat: no-repeat;
   height: 40px;
-  width: 177px;
-  -webkit-transform: .2s;
-  -moz-transform: .2s;
-  -ms-transform: .2s;
-  -o-transform: .2s;
-  transform: .2s; }
+  width: 177px; }
 
 .topnav {
   margin-top: 21px; }
@@ -382,23 +378,23 @@ nav ul li a {
   letter-spacing: 0.03em;
   color: #222222;
   text-decoration: none;
-  margin-top: 9px; }
+  margin-top: 9px;
+  transition: .2s; }
 
 nav ul li a:hover {
-  color: #111111;
-  transition: .2s; }
+  color: #111111; }
 
 .cta {
   color: white;
   background-color: #DA4136;
   border-radius: 6px;
   padding: 10px;
-  margin-left: 24px; }
+  margin-left: 24px;
+  transition: .2s; }
 
 .cta:hover {
   color: white;
-  background-color: #d03226;
-  transition: .2s; }
+  background-color: #d03226; }
 
 .leftbox {
   display: flex;

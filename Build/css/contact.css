@@ -1,2 +1,30 @@
 .contactbackgroundg {
-  background-color: #DA4136; }
+  background: linear-gradient(to bottom, #DA4136 470px, white 25px); }
+
+.cover {
+  position: relative; }
+
+.box {
+  position: absolute;
+  background-color: #DA4136;
+  height: 220px;
+  width: 350px;
+  top: 250px;
+  left: 450px; }
+
+.arrow {
+  display: block;
+  margin: 0 auto;
+  padding-right: 600px; }
+
+h1 {
+  font-family: 'Qanelas-Bold', 'sans-serif';
+  font-size: 3.6em;
+  color: white;
+  text-transform: uppercase;
+  padding: 0; }
+
+.helloline {
+  font-family: 'Qanelas-Light', 'sans-serif';
+  font-size: 2.1em;
+  color: white; }
