@@ -31,7 +31,6 @@ body {
 
 .background-gray {
   background-color: $color-gray;
-  padding: 3px;
   margin-top: 24px;
 }
 
@@ -120,6 +119,20 @@ iframe{
 ////////////////////////////////////////////////////////////////////////////////
 //Chambers
 ////////////////////////////////////////////////////////////////////////////////
+.thumbs {
+  background-color: $color-gray;
+  border: 3px solid $color-gray;
+  margin-bottom: 24px;
+  transition: .2s;
+}
+
+a.imgbtn .thumbs:hover {
+  opacity: 0.8;
+}
+
+.spacer {
+  height: 24px;
+}
 .morebtn {
   display: inline-block;
   font-family: 'Qanelas-Regular', 'sans-serif';
@@ -174,6 +187,16 @@ iframe{
 //   color: darken( $color-red, 10% );
 // }
 
+
+////////////////////////////////////////////////////////////////////////////////
+//More
+////////////////////////////////////////////////////////////////////////////////
+.icons {
+  height: 55px;
+  width: 55px;
+  display: block;
+  margin: 0 auto;
+}
 ////////////////////////////////////////////////////////////////////////////////
 //Type
 ////////////////////////////////////////////////////////////////////////////////
@@ -181,11 +204,11 @@ iframe{
 h1 {
   font-family: 'Qanelas-Black', 'sans-serif';
   font-size: 3.6em;
-  line-height: 100%;
+  line-height: 130%;
   margin-bottom: 0;
 	color: $color-black;
   padding-left: 96px;
-  padding-top: 9px;
+  padding-top: 0;
 }
 
 .subtitle {
@@ -208,13 +231,21 @@ h3 {
   font-size: 2.4em;
   color: $color-blue;
   line-height: 120%;
-  margin-top: 48px;
+  margin-top: 21px;
 }
 
 .info {
   font-family: 'Qanelas-Light', 'sans-serif';
   font-size: 1.8em;
   color: $color-black;
+}
+
+.ekstrainformation {
+  font-family: 'Qanelas-Regular', 'sans-serif';
+  line-height: 200%;
+  font-size: 1.6em;
+  color: $color-black;
+  text-align: center;
 }
 
 hr {
