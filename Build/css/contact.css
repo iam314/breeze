@@ -1,5 +1,5 @@
 .contactbackgroundg {
-  background: linear-gradient(to bottom, #DA4136 470px, white 60px); }
+  background: linear-gradient(to bottom, #DA4136 460px, white 60px); }
 
 .cover {
   position: relative; }
@@ -7,22 +7,25 @@
 .box {
   position: absolute;
   background-color: #DA4136;
-  height: 220px;
+  height: 160px;
   width: 350px;
-  top: 250px;
-  left: 450px; }
+  top: 271px;
+  left: 450px;
+  padding: 15px; }
 
 .arrow {
   display: block;
   margin: 0 auto;
-  padding-right: 600px; }
+  padding-right: 200px; }
 
 h1 {
   font-family: 'Qanelas-Bold', 'sans-serif';
   font-size: 3.6em;
   color: white;
   text-transform: uppercase;
-  padding: 0; }
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 2.6rem; }
 
 .helloline {
   font-family: 'Qanelas-Light', 'sans-serif';
@@ -31,11 +34,11 @@ h1 {
 
 .tel, .mail, .addr {
   font-family: 'Qanelas-Light', 'sans-serif';
-  font-size: 2.1em;
-  color: #111111;
-  margin-bottom: 80px; }
+  font-style: normal;
+  font-size: 1.8em;
+  color: #111111; }
 
-a.tel, a.mail {
+a.tel, a.mail, .addr {
   color: #111111;
   text-decoration: none;
   transition: .2s;
@@ -47,7 +50,7 @@ a.tel:hover, a.mail:hover {
   text-decoration: none; }
 
 .icons {
-  height: 10em;
-  width: 10em;
-  margin-top: 60px;
-  margin-bottom: 36px; }
+  height: 4em;
+  width: 4em;
+  margin-top: 72px;
+  margin-bottom: 28px; }

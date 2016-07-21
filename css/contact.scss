@@ -2,7 +2,7 @@
 @import "variables";
 
 .contactbackgroundg {
-  background: linear-gradient(to bottom, $color-red 470px, white 60px);
+  background: linear-gradient(to bottom, $color-red 460px, white 60px);
 }
 
 .cover {
@@ -12,15 +12,16 @@
 .box {
   position: absolute;
   background-color: $color-red;
-  height: 220px;
+  height: 160px;
   width: 350px;
-  top: 250px;
+  top: 271px;
   left: 450px;
+  padding: 15px;
 }
 .arrow {
   display: block;
   margin: 0 auto;
-  padding-right: 600px;
+  padding-right: 200px;
 }
 
 h1 {
@@ -29,6 +30,8 @@ h1 {
   color: white;
   text-transform: uppercase;
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 2.6rem;
 }
 
 .helloline {
@@ -39,12 +42,12 @@ h1 {
 
 .tel, .mail, .addr {
   font-family: 'Qanelas-Light', 'sans-serif';
-  font-size: 2.1em;
+  font-style: normal;
+  font-size: 1.8em;
   color: $color-black;
-  margin-bottom: 80px;
 }
 
-a.tel, a.mail {
+a.tel, a.mail, .addr {
   color: $color-black;
   text-decoration: none;
   transition: .2s;
@@ -58,11 +61,14 @@ a.tel:hover, a.mail:hover {
 }
 
 .icons {
-  height: 10em;
-  width: 10em;
-  margin-top: 60px;
-  margin-bottom: 36px;
+  height: 4em;
+  width: 4em;
+  margin-top: 72px;
+  margin-bottom: 28px;
 }
+
+
+
 // .contactpage {
 //   text-align: center;
 //   margin-bottom: 1.8rem;
