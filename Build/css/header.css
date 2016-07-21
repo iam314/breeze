@@ -40,18 +40,19 @@ nav ul li a {
   color: #222222;
   text-decoration: none;
   margin-top: 9px;
-  transition: .2s; }
-
-nav ul li a:hover {
-  color: #111111; }
-
-.cta {
-  color: white;
-  background-color: #DA4136;
   border-radius: 6px;
   padding: 10px;
   margin-left: 24px;
+  transition: .2s;
   transition: .2s; }
+
+nav ul li a:hover {
+  color: #111111;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.cta {
+  color: white;
+  background-color: #DA4136; }
 
 .cta:hover {
   color: white;

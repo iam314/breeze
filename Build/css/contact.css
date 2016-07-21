@@ -1,5 +1,5 @@
 .contactbackgroundg {
-  background: linear-gradient(to bottom, #DA4136 470px, white 25px); }
+  background: linear-gradient(to bottom, #DA4136 470px, white 60px); }
 
 .cover {
   position: relative; }
@@ -28,3 +28,26 @@ h1 {
   font-family: 'Qanelas-Light', 'sans-serif';
   font-size: 2.1em;
   color: white; }
+
+.tel, .mail, .addr {
+  font-family: 'Qanelas-Light', 'sans-serif';
+  font-size: 2.1em;
+  color: #111111;
+  margin-bottom: 80px; }
+
+a.tel, a.mail {
+  color: #111111;
+  text-decoration: none;
+  transition: .2s;
+  display: flex;
+  justify-content: center; }
+
+a.tel:hover, a.mail:hover {
+  color: #DA4136;
+  text-decoration: none; }
+
+.icons {
+  height: 10em;
+  width: 10em;
+  margin-top: 60px;
+  margin-bottom: 36px; }
