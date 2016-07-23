@@ -21,6 +21,9 @@ p {
   margin-left: 9px; }
 
 .foterlink {
+  margin-left: 4px; }
+
+.foterlink {
   color: #6C79B7;
   text-decoration: none; }
 
@@ -32,3 +35,13 @@ p {
 .fp {
   display: flex;
   justify-content: center; }
+
+.copyright:after {
+  content: " | "; }
+
+@media (max-width: 673px) {
+  .foterlink {
+    display: none; }
+
+  .copyright:after {
+    content: ""; } }

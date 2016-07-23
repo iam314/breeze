@@ -27,6 +27,10 @@ p {
 }
 
 .foterlink {
+  margin-left: 4px;
+}
+
+.foterlink {
   color: $color-blue;
   text-decoration: none;
 }
@@ -40,4 +44,19 @@ p {
 .fp {
   display: flex;
   justify-content: center;
+}
+
+.copyright:after {
+  content: " | ";
+}
+
+
+@media (max-width: 673px) {
+  .foterlink {
+    display: none;
+  }
+  .copyright:after {
+    content: "";
+  }
+
 }

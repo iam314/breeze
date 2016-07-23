@@ -1,4 +1,3 @@
-
   // 1. This code loads the Youtube IFrame Player API code asynchronously.
   var tag = document.createElement('script');
 
