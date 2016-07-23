@@ -11,23 +11,9 @@
 }
 
 .box {
-  // margin-top: -100px;
-  // position: absolute;
+  margin-top: -152px;
   background-color: $color-red;
-  // height: 160px;
-  // width: 350px;
-  // top: 271px;
-  // left: 450px;
-  padding: 15px;
-}
-// .arrow {
-//   display: block;
-//   margin: 0 auto;
-//   padding-right: 200px;
-// }
-
-.color2 {
-  background-color: white;
+  padding: 14px 14px 14px 24px;
 }
 
 h1 {
@@ -37,18 +23,22 @@ h1 {
   text-transform: uppercase;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 2.6rem;
+  margin-bottom: 1.2rem;
 }
 
 .helloline {
   font-family: 'Qanelas-Light', 'sans-serif';
   font-size: 2.1em;
+  line-height: 140%;
   color: white;
+  margin-bottom: 0.9rem;
 }
+
 
 .tel, .mail, .addr {
   font-family: 'Qanelas-Light', 'sans-serif';
   font-style: normal;
+  text-align: center;
   font-size: 1.8em;
   color: $color-black;
 }
@@ -73,28 +63,60 @@ a.tel:hover, a.mail:hover {
   margin-bottom: 28px;
 }
 
+.spacercontacts {
+  height: 48px;
+  display: none;
+}
 
+////////////////////////////////////////////////////////////////////////////////
+//Responsive
+////////////////////////////////////////////////////////////////////////////////
+@media (max-width: 1199px) {
+  h1 {
+    font-family: 'Qanelas-Bold', 'sans-serif';
+    font-size: 2.6em;
+    margin-bottom: 1.2rem;
+  }
 
-// .contactpage {
-//   text-align: center;
-//   margin-bottom: 1.8rem;
-// }
-// a.contactlinks, .styles {
-//     font-family: 'Open Sans', 'sans-serif';
-//     font-weight: 400;
-//     font-style: normal;
-//     font-size: 1.8rem;
-//     line-height: 150%;
-//     color: $color-black;
-//     text-decoration: none;
-//   }
-//   a:hover {
-//     color: $color-red;
-//   }
-//
-//   .over {
-//     font-style: normal;
-//     color: $color-red;
-//     margin-top: 35px;
-//     margin-bottom: 20px;
-//   }
+  .helloline {
+    font-family: 'Qanelas-Light', 'sans-serif';
+    font-size: 1.8em;
+    margin-bottom: 0.9rem;
+  }
+
+   .box {
+      margin-top: -129px;
+    }
+}
+
+@media (max-width: 851px) {
+  .box {
+     margin-top: -109px;
+   }
+}
+
+@media (max-width: 773px) {
+  .spacercontacts {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .icons {
+    margin-top: 48px;
+  }
+  .box {
+    margin-top: 0;
+  }
+  h1 {
+    font-family: 'Qanelas-Bold', 'sans-serif';
+    font-size: 2.1em;
+    margin-bottom: 0.8rem;
+  }
+
+  .helloline {
+    font-family: 'Qanelas-Light', 'sans-serif';
+    font-size: 1.8em;
+    margin-bottom: 0.8rem;
+  }
+}
