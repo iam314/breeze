@@ -50,8 +50,7 @@ a.tel:hover, a.mail:hover {
   margin-bottom: 28px; }
 
 .spacercontacts {
-  height: 48px;
-  display: none; }
+  height: 48px; }
 
 @media (max-width: 1199px) {
   h1 {
@@ -69,9 +68,6 @@ a.tel:hover, a.mail:hover {
 @media (max-width: 851px) {
   .box {
     margin-top: -109px; } }
-@media (max-width: 773px) {
-  .spacercontacts {
-    display: block; } }
 @media (max-width: 700px) {
   .icons {
     margin-top: 48px; }
