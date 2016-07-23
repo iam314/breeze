@@ -2,26 +2,32 @@
 @import "variables";
 
 .contactbackgroundg {
-  background: linear-gradient(to bottom, $color-red 460px, white 60px);
+  // background: linear-gradient(to bottom, $color-red 460px, white 60px);
+  background-color: $color-red;
 }
 
 .cover {
-  position: relative;
+  margin-top: 62px;
 }
 
 .box {
-  position: absolute;
+  // margin-top: -100px;
+  // position: absolute;
   background-color: $color-red;
-  height: 160px;
-  width: 350px;
-  top: 271px;
-  left: 450px;
+  // height: 160px;
+  // width: 350px;
+  // top: 271px;
+  // left: 450px;
   padding: 15px;
 }
-.arrow {
-  display: block;
-  margin: 0 auto;
-  padding-right: 200px;
+// .arrow {
+//   display: block;
+//   margin: 0 auto;
+//   padding-right: 200px;
+// }
+
+.color2 {
+  background-color: white;
 }
 
 h1 {

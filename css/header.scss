@@ -86,7 +86,10 @@ nav ul li a:hover {
   }
 }
 
-@media (max-width: 673px) {
+@media (max-width: 550px) {
+  nav ul li {
+  	display: none;
+  }
 }
 
 @media (max-width: 433px) {
@@ -95,15 +98,15 @@ nav ul li a:hover {
       float: none;
     margin: 1.5em auto 0 auto;
   }
-  .topnav {
-    margin-top: 1.5em;
-  }
-  nav ul li a {
-      font-size: 1.6em;
-    }
-
-  .leftbox {
-    display: flex;
-    justify-content: center;
-  }
+  // .topnav {
+  //   margin-top: 1.5em;
+  // }
+  // nav ul li a {
+  //     font-size: 1.6em;
+  //   }
+  //
+  // .leftbox {
+  //   display: flex;
+  //   justify-content: center;
+  // }
 }

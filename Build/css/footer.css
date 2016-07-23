@@ -39,9 +39,12 @@ p {
 .copyright:after {
   content: " | "; }
 
-@media (max-width: 673px) {
+@media (max-width: 380px) {
   .foterlink {
     display: none; }
 
   .copyright:after {
     content: ""; } }
+@media (max-width: 283px) {
+  .footerlogo {
+    display: none; } }
