@@ -21,7 +21,7 @@ nav {
   // margin-bottom: 0.9em;
   margin-left: 2.4em;
 	cursor: pointer;
-  transition: .2s;
+  transition: .2s, ease-in-out;
 }
 
 .logo:hover {
@@ -53,8 +53,7 @@ nav ul li a {
   border-radius: 6px;
   padding: 10px;
   margin-left: 24px;
-  transition: .2s;
-  transition: .2s;
+  transition: .2s, ease-in-out;
 }
 
 nav ul li a:hover {
@@ -93,9 +92,9 @@ nav ul li a:hover {
 }
 
 @media (max-width: 433px) {
-    .logo {
-      display: flex;
-      float: none;
+  .logo {
+    display: flex;
+    float: none;
     margin: 1.5em auto 0 auto;
   }
   // .topnav {

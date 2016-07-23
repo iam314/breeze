@@ -16,7 +16,7 @@ nav {
   margin-top: 1.1em;
   margin-left: 2.4em;
   cursor: pointer;
-  transition: .2s; }
+  transition: .2s, ease-in-out; }
 
 .logo:hover {
   background-image: url(../img/logo_hover.svg);
@@ -43,8 +43,7 @@ nav ul li a {
   border-radius: 6px;
   padding: 10px;
   margin-left: 24px;
-  transition: .2s;
-  transition: .2s; }
+  transition: .2s, ease-in-out; }
 
 nav ul li a:hover {
   color: #111111;

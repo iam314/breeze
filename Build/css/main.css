@@ -355,7 +355,7 @@ nav {
   margin-top: 1.1em;
   margin-left: 2.4em;
   cursor: pointer;
-  transition: .2s; }
+  transition: .2s, ease-in-out; }
 
 .logo:hover {
   background-image: url(../img/logo_hover.svg);
@@ -382,8 +382,7 @@ nav ul li a {
   border-radius: 6px;
   padding: 10px;
   margin-left: 24px;
-  transition: .2s;
-  transition: .2s; }
+  transition: .2s, ease-in-out; }
 
 nav ul li a:hover {
   color: #111111;
@@ -569,7 +568,7 @@ iframe {
   margin: 17% 35%;
   text-align: center;
   width: 4em;
-  transition: .2s; }
+  transition: .2s, ease-in-out; }
 
 .palybtn:hover {
   background-color: #DA4136;
@@ -579,7 +578,7 @@ iframe {
   background-color: #EEEEEE;
   border: 3px solid #EEEEEE;
   margin-bottom: 24px;
-  transition: .2s; }
+  transition: .2s, ease-in-out; }
 
 a.imgbtn .thumbs:hover {
   opacity: 0.8; }
@@ -601,7 +600,7 @@ a.imgbtn .thumbs:hover {
   margin-top: 46px;
   text-align: center;
   width: 12em;
-  transition: .2s; }
+  transition: .2s, ease-in-out; }
 
 .morebtn:hover {
   background-color: #DA4136;
