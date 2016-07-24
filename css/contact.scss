@@ -2,7 +2,6 @@
 @import "variables";
 
 .contactbackgroundg {
-  // background: linear-gradient(to bottom, $color-red 460px, white 60px);
   background-color: $color-red;
 }
 
@@ -100,13 +99,7 @@ a.tel:hover, a.mail:hover {
    }
 }
 
-// @media (max-width: 773px) {
-//   .spacercontacts {
-//     display: block;
-//   }
-// }
-
-@media (max-width: 700px) {
+@media (max-width: 851px) {
   .icons {
     margin-top: 48px;
   }

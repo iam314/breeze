@@ -2,6 +2,29 @@
 <html lang="bg">
 <head>
 	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
 	<meta charset="utf-8">
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 	<title>Breeze ltd | Поръчкови барокамери</title>
@@ -83,9 +106,11 @@
   <div class="row">
     <div class="spacer"></div>
     <div class="col col--4-of-12">
+      <div class="addpading">
         <h3>Двукорпусна, двуотсечна барокамера</h3>
         <p class="info">Произведена за<br>МЦ Оксилайф-София</p>
         <a href="#" class="morebtn">Технически Параметри</a>
+      </div>
     </div>
 
     <div class="col col--4-of-12">
@@ -135,8 +160,8 @@
         <a href="img/barochambers/1stchamber/1stchamber_image8.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/1stchamber/1stchamber_image8.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
 
     </div>
-
   </div>
+  <a href="#" class="morebtnmobile">Технически Параметри</a>
 </div>
 
 <hr>
@@ -145,9 +170,11 @@
   <div class="row">
     <div class="spacer"></div>
     <div class="col col--4-of-12">
+      <div class="addpading">
         <h3>Двукорпусна, двуотсечна барокамера</h3>
         <p class="info">Произведена за <br>МЦ „Баромедик“ Варна.</p>
         <a href="#" class="morebtn">Технически Параметри</a>
+      </div>
     </div>
 
     <div class="col col--4-of-12">
@@ -180,6 +207,8 @@
 
     </div>
   </div>
+  <a href="#" class="morebtnmobile">Технически Параметри</a>
+
 </div>
 <hr>
 
@@ -187,9 +216,11 @@
   <div class="row">
     <div class="spacer"></div>
     <div class="col col--4-of-12">
+      <div class="addpading">
         <h3>Едно местна Барокамера</h3>
         <p class="info">Произведена за<br>Черноморски водолазен център.</p>
         <a href="#" class="morebtn">Технически Параметри</a>
+      </div>
     </div>
 
     <div class="col col--4-of-12">
@@ -211,6 +242,7 @@
     </div>
 
   </div>
+  <a href="#" class="morebtnmobile">Технически Параметри</a>
 </div>
 </section>
 
@@ -226,7 +258,7 @@
     <div class="row">
       <div class="col col--6-of-12 col--centered">
         <img class="icons" src="img/icons/teaching.svg" alt="teaching">
-        <a href="#" class="morebtn bottombtn">Научете Повече</a>
+        <a href="#" class="bottombtn">Научете Повече</a>
       </div>
     </div>
   </div>

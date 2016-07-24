@@ -276,13 +276,13 @@
   min-height: 1px;
   padding-left: 24px;
   vertical-align: top; }
-  @media (max-width: 700px) {
+  @media (max-width: 851px) {
     .col {
       display: block;
       margin-left: 0;
       margin-right: 0;
       width: auto; } }
-  @media (max-width: 700px) and (min-width: 480px) {
+  @media (max-width: 851px) and (min-width: 480px) {
     .col[class*="col--m-"] {
       display: inline-block;
       margin-right: -.24em; }
@@ -575,7 +575,6 @@ iframe {
   opacity: 1; }
 
 .thumbs {
-  background-color: #EEEEEE;
   border: 3px solid #EEEEEE;
   margin-bottom: 24px;
   transition: .2s, ease-in-out; }
@@ -585,6 +584,9 @@ a.imgbtn .thumbs:hover {
 
 .spacer {
   height: 24px; }
+
+.addpading {
+  margin-left: 3px; }
 
 .morebtn {
   display: block;
@@ -606,12 +608,46 @@ a.imgbtn .thumbs:hover {
   background-color: #DA4136;
   color: #EEEEEE; }
 
+.morebtnmobile {
+  display: none;
+  font-family: 'Qanelas-Regular', 'sans-serif';
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  border: 1px solid #DA4136;
+  border-radius: 6px;
+  color: #DA4136;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  width: 12em;
+  transition: .2s, ease-in-out; }
+
+.morebtnmobile:hover {
+  background-color: #DA4136;
+  color: #EEEEEE; }
+
 .bottombtn {
+  display: block;
+  font-family: 'Qanelas-Regular', 'sans-serif';
+  font-size: 1.6em;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  border: 1px solid #DA4136;
+  border-radius: 6px;
+  color: #DA4136;
+  text-decoration: none;
+  cursor: pointer;
   margin-top: 24px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 36px;
-  width: 9em; }
+  text-align: center;
+  width: 9em;
+  transition: .2s, ease-in-out; }
+
+.bottombtn:hover {
+  background-color: #DA4136;
+  color: #EEEEEE; }
 
 .icons {
   height: 16.8em;
@@ -663,3 +699,57 @@ h3 {
 
 hr {
   border-top: 1px solid #EEEEEE; }
+
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 2.1em; }
+
+  h3 {
+    font-size: 2.1em;
+    line-height: 120%;
+    margin-top: 21px;
+    margin-bottom: 18px; }
+
+  .info {
+    font-size: 1.6em; }
+
+  .morebtn {
+    margin-top: 24px;
+    font-size: 1.4em; }
+
+  .icons {
+    height: 12.8em;
+    width: 24.6em; } }
+@media (max-width: 991px) {
+  h3 {
+    margin-top: 8px;
+    margin-bottom: 14px; }
+
+  .morebtn {
+    margin-top: 18px;
+    font-size: 1.4em; }
+
+  .bottombtn {
+    font-size: 1.4em; } }
+@media (max-width: 851px) {
+  h3 {
+    text-align: center; }
+
+  .info {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 18px; }
+
+  .morebtn {
+    display: none; }
+
+  .bottombtn {
+    font-size: 1.6em; }
+
+  .morebtnmobile {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    font-size: 1.4em;
+    margin-left: auto;
+    margin-right: auto; } }

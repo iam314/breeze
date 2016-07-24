@@ -276,13 +276,13 @@
   min-height: 1px;
   padding-left: 24px;
   vertical-align: top; }
-  @media (max-width: 700px) {
+  @media (max-width: 851px) {
     .col {
       display: block;
       margin-left: 0;
       margin-right: 0;
       width: auto; } }
-  @media (max-width: 700px) and (min-width: 480px) {
+  @media (max-width: 851px) and (min-width: 480px) {
     .col[class*="col--m-"] {
       display: inline-block;
       margin-right: -.24em; }
