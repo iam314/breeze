@@ -2,29 +2,6 @@
 <html lang="bg">
 <head>
 	
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
 	<meta charset="utf-8">
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 	<title>Breeze ltd | Контакти</title>
@@ -41,26 +18,25 @@
 
 <div class="main">
 
-<header class="container-fluid">
+  <header class="container-fluid">
   <nav>
-  <div class="row">
-    <div class="col col--12-of-12">
-    	<a href="index.html" class="current-parent logo"></a>
+    <div class="row">
+      <div class="col col--12-of-12">
+      	<a href="index.html" class="current-parent logo"></a>
 
-      <div class="leftbox">
-        <ul class="topnav">
-  				<li class='current-parent'><a class='current-parent' href="index.html">Научете Повече</a></li>
-          <li class='current'><a class="current cta" href="contacts.html">Контакти</a></li>
-  			</ul>
-      </div>
+        <div class="leftbox">
+          <ul class="topnav">
+    				<li class='current-parent'><a class='current-parent' href="index.html">Научете Повече</a></li>
+            <li class='current'><a class="current cta" href="contacts.html">Контакти</a></li>
+    			</ul>
+        </div>
 
+    	</div>
   	</div>
-	</div>
-</nav>
-
+  </nav>
 </header>
 
-<!-- section welcome -->
+
 <section>
   <div class="container-fluid contactbackgroundg">
       <div class="container">
@@ -90,7 +66,7 @@
     <div class="row">
       <div class="col col--4-of-12">
         <img class="icons" src="img/icons/tel.svg" alt="call phone">
-        <a class="tel" href="tel:+359 888 355 840">+359 888 355 840</a>
+        <a class="tel" href="tel:+359888355840">+359 888 355 840</a>
       </div>
       <div class="col col--4-of-12">
         <img class="icons" src="img/icons/mail.svg" alt="e-mail">
@@ -111,17 +87,17 @@
 </section>
 
   </div>
-		<footer class="container-fluid site-footer">
-				<div class="row">
-					<div class="col col--12-of-12 fp">
+	<footer class="container-fluid site-footer">
+			<div class="row">
+				<div class="col col--12-of-12 fp">
 
-						<a href="index.html" class="current-parent footerlogo"></a>
-						<p class="copyright">©2016 Всички права запазени.</p>
-						<a href="contacts.html" class="current foterlink">Контакти</a>
+					<a href="index.html" class="current-parent footerlogo"></a>
+					<p class="copyright">©2016 Всички права запазени.</p>
+					<a href="contacts.html" class="current foterlink">Контакти</a>
 
-					</div>
 				</div>
-		</footer>
+			</div>
+	</footer>
 
 </body>
 </html>
