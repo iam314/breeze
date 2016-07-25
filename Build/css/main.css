@@ -696,6 +696,16 @@ hr {
   .leadimage {
     background: linear-gradient(to bottom, #6C79B7 403px, white 20px); }
 
+  h1 {
+    font-size: 3.6em;
+    line-height: 110%;
+    margin-top: 21px;
+    padding-left: 78px; }
+
+  .subtitle {
+    font-size: 2.1em;
+    padding-left: 78px; }
+
   h3 {
     font-size: 2.1em;
     line-height: 120%;
@@ -716,6 +726,16 @@ hr {
   .thumbs {
     margin-bottom: 0; } }
 @media (max-width: 991px) {
+  h1 {
+    font-size: 2.8em;
+    line-height: 120%;
+    margin-top: 16px;
+    padding-left: 68px; }
+
+  .subtitle {
+    font-size: 1.8em;
+    padding-left: 68px; }
+
   .leadimage {
     background: linear-gradient(to bottom, #6C79B7 346px, white 20px); }
 

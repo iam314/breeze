@@ -5,14 +5,6 @@
 @import "footer";
 @import "fonts";
 
-// * {
-//   -webkit-transition: .2s;
-//   -moz-transition: .2s;
-//   -ms-transition: .2s;
-//   -o-transition: .2s;
-//   transition: .2s;
-// }
-
 html {
   font-size: 62.5%;
   font-family: 'Qanelas-Regular', sans-serif;
@@ -83,10 +75,6 @@ iframe{
   background: linear-gradient(to bottom, $color-blue 491px, white 25px);
 }
 
-#splash_screen {
-  // cursor: pointer;
-}
-
 .slogan {
   z-index: 100;
   position: absolute;
@@ -112,10 +100,6 @@ iframe{
   cursor: pointer;
   left: 47.5%;
   top: 38.5%;
-  // margin-left: auto;
-  // margin-right: auto;
-  // margin-top: -410px;
-  // margin-bottom: 385px;
   text-align: center;
   width: 4em;
   transition: .2s, ease-in-out;
@@ -125,12 +109,10 @@ iframe{
   background-color: $color-red;
   opacity: 1;
 }
-
 ////////////////////////////////////////////////////////////////////////////////
 //Chambers
 ////////////////////////////////////////////////////////////////////////////////
 .thumbs {
-  // backgroun: ;d-color: $color-gray;
   border: 3px solid $color-gray;
   margin-bottom: 14px;
   transition: .2s, ease-in-out;
@@ -228,7 +210,6 @@ a.imgbtn .thumbs:hover {
 ////////////////////////////////////////////////////////////////////////////////
 //Type
 ////////////////////////////////////////////////////////////////////////////////
-
 h1 {
   font-family: 'Qanelas-Black', 'sans-serif';
   font-size: 3.6em;
@@ -294,6 +275,16 @@ hr {
   .leadimage {
   background: linear-gradient(to bottom, $color-blue 403px, white 20px);
   }
+  h1 {
+    font-size: 3.6em;
+    line-height: 110%;
+    margin-top: 21px;
+    padding-left: 78px;
+  }
+  .subtitle {
+    font-size: 2.1em;
+    padding-left: 78px;
+  }
   h3 {
     font-size: 2.1em;
     line-height: 120%;
@@ -317,6 +308,16 @@ hr {
 }
 
 @media (max-width: 991px){
+  h1 {
+    font-size: 2.8em;
+    line-height: 120%;
+    margin-top: 16px;
+    padding-left: 68px;
+  }
+  .subtitle {
+    font-size: 1.8em;
+    padding-left: 68px;
+  }
   .leadimage {
   background: linear-gradient(to bottom, $color-blue 346px, white 20px);
   }
@@ -334,6 +335,8 @@ hr {
 }
 
 @media (max-width: 851px) {
+  h1 {
+  }
   .leadimage {
   background: linear-gradient(to bottom, $color-blue 309px, white 20px);
   }
