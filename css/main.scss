@@ -81,6 +81,10 @@ iframe{
   top: 62px;
 }
 
+.slogan_min {
+  display: none;
+}
+
 .maiimage {
   position: relative;
 }
@@ -336,6 +340,15 @@ hr {
 
 @media (max-width: 851px) {
   h1 {
+    color: white;
+    padding-left: 0;
+    margin-top: 0;
+    line-height: 145%;
+  }
+
+  .subtitle {
+    color: white;
+    padding-left: 0;
   }
   .leadimage {
   background: linear-gradient(to bottom, $color-blue 309px, white 20px);
@@ -371,5 +384,13 @@ hr {
     font-size: 1.4em;
     margin-left: auto;
     margin-right: auto;
+  }
+  .slogan {
+    display: none;
+  }
+  .slogan_min {
+    display: block;
+    background-color: $color-blue;
+    padding: 8px 14px 14px 12px;
   }
 }
