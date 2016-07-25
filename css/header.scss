@@ -32,7 +32,7 @@ nav {
 }
 
 .topnav {
-  margin-top: 21px;
+  margin-top: 22px;
 }
 
 nav ul li {
@@ -80,23 +80,23 @@ nav ul li a:hover {
   .logo {
     margin-left: 15px;
   }
-  .logos {
-    display: none;
-  }
+  // .logos {
+  //   display: none;
+  // }
 }
 
 @media (max-width: 550px) {
-  nav ul li {
-  	display: none;
-  }
+  // nav ul li {
+  // 	display: none;
+  // }
 }
 
 @media (max-width: 433px) {
-  .logo {
-    display: flex;
-    float: none;
-    margin: 1.5em auto 0 auto;
-  }
+  // .logo {
+  //   display: flex;
+  //   float: none;
+  //   margin: 1.5em auto 0 auto;
+  // }
   // .topnav {
   //   margin-top: 1.5em;
   // }

@@ -32,7 +32,7 @@
 
   $(document).ready(function() {
 
-    $("#splash_screen").click(function(event) {
+    $("#playbutton").click(function(event) {
       $("#splash_screen").hide();
       $("#youtube_video_parent").show();
 
