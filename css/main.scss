@@ -24,7 +24,7 @@ body {
 }
 
 ::selection {
-    background: lighten($color-blue, 30%);
+  background: lighten($color-blue, 30%);
  }
 
 .background-gray {
@@ -72,7 +72,9 @@ iframe{
 ////////////////////////////////////////////////////////////////////////////////
 .leadimage {
   margin-top: 62px;
-  background: linear-gradient(to bottom, $color-blue 491px, white 25px);
+  background: -webkit-linear-gradient($color-blue 491px, white 25px);
+  background: -o-linear-gradient($color-blue 491px, white 25px);
+  background: linear-gradient($color-blue 491px, white 25px);
 }
 
 .slogan {
@@ -91,7 +93,7 @@ iframe{
 
 .palybtn {
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
   display: block;
   font-size: 1.6em;
   background-color: $color-black;
@@ -132,7 +134,7 @@ a.imgbtn .thumbs:hover {
 }
 
 .addpading {
-  margin-left: 3px;
+  margin-left: 10px;
 }
 
 .morebtn {
@@ -177,30 +179,6 @@ a.imgbtn .thumbs:hover {
 	color: $color_gray;
 }
 
-.bottombtn {
-  display: block;
-  font-family: 'Qanelas-Regular', 'sans-serif';
-  font-size: 1.6em;
-	padding-top: 1.2rem;
-	padding-bottom: 1.2rem;
-  border: 1px solid $color-red;
-  border-radius: 6px;
-	color: $color-red;
-  text-decoration: none;
-	cursor: pointer;
-  margin-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 24px;
-	text-align: center;
-	width: 9em;
-  transition: .2s, ease-in-out;
-}
-
-.bottombtn:hover {
-	background-color: $color-red;
-	color: $color_gray;
-}
 
 ////////////////////////////////////////////////////////////////////////////////
 //More
@@ -210,7 +188,34 @@ a.imgbtn .thumbs:hover {
   width: 28.6em;
   display: block;
   margin: 0 auto;
+  margin-bottom: 18px;
 }
+
+// .bottombtn {
+//   display: block;
+//   font-family: 'Qanelas-Regular', 'sans-serif';
+//   font-size: 1.6em;
+// 	padding-top: 1.2rem;
+// 	padding-bottom: 1.2rem;
+//   border: 1px solid $color-red;
+//   border-radius: 6px;
+// 	color: $color-red;
+//   text-decoration: none;
+// 	cursor: pointer;
+//   margin-top: 24px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 24px;
+// 	text-align: center;
+// 	width: 9em;
+//   transition: .2s, ease-in-out;
+// }
+//
+// .bottombtn:hover {
+// 	background-color: $color-red;
+// 	color: $color_gray;
+// }
+
 ////////////////////////////////////////////////////////////////////////////////
 //Type
 ////////////////////////////////////////////////////////////////////////////////
@@ -232,10 +237,9 @@ h1 {
 
 h2 {
   font-family: 'Qanelas-Bold', 'sans-serif';
-  font-size: 1.8em;
+  font-size: 2.4em;
   color: $color-black;
   text-align: center;
-  text-transform: uppercase;
   margin-top: 24px;
   margin-bottom: 12px;
 }
@@ -272,13 +276,21 @@ hr {
 ////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1249px) {
   .leadimage {
-  background: linear-gradient(to bottom, $color-blue 479px, white 20px);
+    background: -webkit-linear-gradient($color-blue 479px, white 20px);
+    background: -o-linear-gradient($color-blue 479px, white 20px);
+    background: linear-gradient($color-blue 479px, white 20px);
+    }
+  .palybtn {
+    left: 46.7%;
+    top: 40%;
   }
 }
 @media (max-width: 1199px) {
   .leadimage {
-  background: linear-gradient(to bottom, $color-blue 403px, white 20px);
-  }
+    background: -webkit-linear-gradient($color-blue 403px, white 20px);
+    background: -o-linear-gradient($color-blue 403px, white 20px);
+    background: linear-gradient($color-blue 403px, white 20px);
+    }
   h1 {
     font-size: 3.6em;
     line-height: 110%;
@@ -310,8 +322,11 @@ hr {
     margin-bottom: 0;
   }
 }
-
 @media (max-width: 991px){
+  .palybtn {
+    left: 46.3%;
+    top: 40%;
+  }
   h1 {
     font-size: 2.8em;
     line-height: 120%;
@@ -323,8 +338,10 @@ hr {
     padding-left: 68px;
   }
   .leadimage {
-  background: linear-gradient(to bottom, $color-blue 346px, white 20px);
-  }
+    background: -webkit-linear-gradient($color-blue 346px, white 20px);
+    background: -o-linear-gradient($color-blue 346px, white 20px);
+    background: linear-gradient($color-blue 346px, white 20px);
+    }
   h3 {
     margin-top: 8px;
     margin-bottom: 14px;
@@ -337,25 +354,36 @@ hr {
     font-size: 1.4em;
   }
 }
-
 @media (max-width: 851px) {
+  .leadimage {
+    margin-top: 50px;
+  }
+  .palybtn {
+    left: 45.9%;
+    top: 40%;
+  }
   h1 {
+    font-size: 2.1em;
     color: white;
     padding-left: 0;
-    margin-top: 0;
-    line-height: 145%;
+    letter-spacing: 0.08rem;
+    margin-top: 4px;
+    line-height: 110%;
+    padding-bottom: 6px;
   }
-
   .subtitle {
     color: white;
     padding-left: 0;
   }
   .leadimage {
-  background: linear-gradient(to bottom, $color-blue 309px, white 20px);
-  }
+    background: -webkit-linear-gradient($color-blue 309px, white 20px);
+    background: -o-linear-gradient($color-blue 309px, white 20px);
+    background: linear-gradient($color-blue 309px, white 20px);
+    }
   h2 {
     font-size: 16px;
     margin-bottom: 12px;
+    text-transform: uppercase;
   }
   .spacer {
     height: 12px;
@@ -392,5 +420,38 @@ hr {
     display: block;
     background-color: $color-blue;
     padding: 8px 14px 14px 12px;
+  }
+  .icons {
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 760px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .subtitle {
+    font-size: 1.6em;
+  }
+  .palybtn {
+    left: 42.3%;
+    top: 40%;
+  }
+}
+@media (max-width: 760px) {
+  .palybtn {
+    left: 45.9%;
+    top: 40%;
+  }
+}
+@media (max-width: 690px) {
+  .palybtn {
+    left: 44.9%;
+    top: 40%;
+  }
+}
+@media (max-width: 479px) {
+  .palybtn {
+    left: 38.9%;
+    top: 40%;
   }
 }
