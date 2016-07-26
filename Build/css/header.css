@@ -19,9 +19,7 @@ nav {
 
 .logo:hover {
   background-image: url(../img/logo_hover.svg);
-  background-repeat: no-repeat;
-  height: 40px;
-  width: 177px; }
+  background-repeat: no-repeat; }
 
 .topnav {
   margin-top: 22px; }
