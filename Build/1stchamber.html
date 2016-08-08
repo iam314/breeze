@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<title>Breeze ltd | Камера МЦ Оксилайф-София</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Производство и доставка на Барокамери. Съобразени с Вашите изисквания.">
+	<meta name="keywords" content="баракомери, barochamber, хипербарна, терапия">
+	<meta name="author" content="Breeze ltd">
+	<!-- Le styles -->
+	<link href="css/main.css" rel="stylesheet">
+<link href="css/chambers.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="main">
+
+  <header class="container-fluid">
+  <nav>
+    <div class="row">
+      <div class="col col--12-of-12">
+      	<a href="index.html" class="current-parent logo"></a>
+
+        <div class="leftbox">
+          <ul class="topnav">
+    				<!-- <li><a href="#">Научете Повече</a></li> -->
+            <li><a class="cta" href="contacts.html">Контакти</a></li>
+    			</ul>
+        </div>
+
+    	</div>
+  	</div>
+  </nav>
+</header>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col col--7-of-12 col--push-2-of-12">
+          <img src="img/barochambers/1stchamber_image.jpg" class="img-responsive center-block cover" alt="" />
+        </div>
+      </div>
+    </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col col--7-of-12 col--push-2-of-12">
+              <hr>
+              <h3>Двукорпусна, двуотсечна барокамера</h3>
+                <p class="info">Произведена за МЦ Оксилайф-София</p>
+              <h2>Технически параметри</h2>
+              <hr>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="row">
+            <div class="col col--7-of-12 col--push-2-of-12">
+              <table style="width:100%">
+                <tr>
+                  <td class="specs">диаметър</td>
+                  <td class="specs">1800 мм.</td>
+                </tr>
+                <tr class="gr">
+                  <td class="specs">обща дължина</td>
+                  <td class="specs">6000 мм.</td>
+                </tr>
+                <tr>
+                  <td class="specs">работно налягане</td>
+                  <td class="specs">1.0 Мра</td>
+                </tr>
+                <tr class="gr">
+                  <td class="specs">места</td>
+                  <td class="specs">10 + 4</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+    <div class="spacerchambers"></div>
+
+  </section>
+</div>
+	<footer class="container-fluid site-footer">
+			<div class="row">
+				<div class="col col--12-of-12 fp">
+
+					<a href="index.html" class="current-parent footerlogo"></a>
+					<p class="copyright">©2016 Всички права запазени.</p>
+					<a href="contacts.html" class="foterlink">Контакти</a>
+
+				</div>
+			</div>
+	</footer>
+
+</body>
+</html>

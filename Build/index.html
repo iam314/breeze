@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<title>Breeze ltd | Поръчкови барокамери</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Производство и доставка на Барокамери. Съобразени с Вашите изисквания.">
+	<meta name="keywords" content="баракомери, barochamber, хипербарна, терапия">
+	<meta name="author" content="Breeze ltd">
+	<!-- Le styles -->
+	<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="main">
+
+  <header class="container-fluid">
+  <nav>
+    <div class="row">
+      <div class="col col--12-of-12">
+      	<a href="index.html" class="current logo"></a>
+
+        <div class="leftbox">
+          <ul class="topnav">
+    				<!-- <li><a href="#">Научете Повече</a></li> -->
+            <li><a class="cta" href="contacts.html">Контакти</a></li>
+    			</ul>
+        </div>
+
+    	</div>
+  	</div>
+  </nav>
+</header>
+
+
+  <section class="container-fluid">
+  <div class="leadimage">
+    <div class="container">
+      <div class="row">
+        <div class="col col--12-of-12">
+          <div class="delimitador" id="youtube_video_parent" style="display:none">
+            <div class="contenedor">
+              <div id="youtube_video"></div>
+            </div>
+          </div>
+
+          <div class="delimitador2" id="splash_screen">
+            <!--
+            <div class="contenedor">
+              <iframe width="1280" height="720" src="https://www.youtube.com/embed/BPnF9EYFblE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            -->
+              <div class="slogan">
+                <h1>Производство и доставка.</h1>
+                <p class="subtitle">Барокамери, съобразени с Вашите изисквания.</p>
+              </div>
+
+            <div class="maiimage">
+              <img src="img/main_image.jpg" class="img-responsive center-block" alt="" />
+              <a href="#" id="playbutton" class="palybtn"><img src="img/icons/play.png" alt="" /></a>
+            </div>
+
+            <div class="slogan_min">
+              <h1>Производство и доставка.</h1>
+              <p class="subtitle">Барокамери, съобразени с Вашите изисквания.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="container-fluid">
+
+
+  <h2>Барокамери изработени от нас</h2>
+   <hr>
+
+<div class="container">
+  <div class="row row--no-gutter">
+    <div class="spacer"></div>
+    <div class="col col--4-of-12">
+      <div class="addpading">
+        <h3>Двукорпусна, двуотсечна барокамера</h3>
+        <p class="info">Произведена за<br>МЦ Оксилайф-София</p>
+        <a href="1stchamber.html" class="morebtn">Технически Параметри</a>
+      </div>
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/1stchamber/1stchamber_image1.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/1stchamber/1stchamber_image1.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/1stchamber/1stchamber_image2.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/1stchamber/1stchamber_image2.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/1stchamber/1stchamber_image3.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/1stchamber/1stchamber_image3.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/1stchamber/1stchamber_image4.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/1stchamber/1stchamber_image4.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/1stchamber/1stchamber_image5.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/1stchamber/1stchamber_image5.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/1stchamber/1stchamber_image6.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/1stchamber/1stchamber_image6.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/1stchamber/1stchamber_image7.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/1stchamber/1stchamber_image7.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/1stchamber/1stchamber_image8.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/1stchamber/1stchamber_image8.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+  </div>
+  <a href="1stchamber.html" class="morebtnmobile">Технически Параметри</a>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="row row--no-gutter">
+    <div class="spacer"></div>
+    <div class="col col--4-of-12">
+      <div class="addpading">
+        <h3>Двукорпусна, двуотсечна барокамера</h3>
+        <p class="info">Произведена за <br>МЦ „Баромедик“ Варна</p>
+        <a href="2ndchamber.html" class="morebtn">Технически Параметри</a>
+      </div>
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/2ndchamber/2ndchamber_image1.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/2ndchamber/2ndchamber_image1.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/2ndchamber/2ndchamber_image2.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/2ndchamber/2ndchamber_image2.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/2ndchamber/2ndchamber_image3.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/2ndchamber/2ndchamber_image3.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/2ndchamber/2ndchamber_image4.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/2ndchamber/2ndchamber_image4.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/2ndchamber/2ndchamber_image5.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/2ndchamber/2ndchamber_image5.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+  </div>
+  <a href="2ndchamber.html" class="morebtnmobile">Технически Параметри</a>
+
+</div>
+<hr>
+
+<div class="container">
+  <div class="row row--no-gutter">
+    <div class="spacer"></div>
+    <div class="col col--4-of-12">
+      <div class="addpading">
+        <h3>Едно местна Барокамера</h3>
+        <p class="info">Произведена за<br>Черноморски водолазен център</p>
+        <a href="3rdchamber.html" class="morebtn">Технически Параметри</a>
+      </div>
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/3rdchamber/3rdchamber_image1.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/3rdchamber/3rdchamber_image1.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/3rdchamber/3rdchamber_image2.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/3rdchamber/3rdchamber_image2.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+    <div class="col col--4-of-12 col col--push-4-of-12 col--m-2-of-4 col--s-2-of-4">
+
+        <a href="img/barochambers/3rdchamber/3rdchamber_image3.jpg" class="imgbtn" target="_self"><img src="img/barochambers/thumbs/3rdchamber/3rdchamber_image3.jpg" class="img-responsive center-block thumbs" alt="click for full size"></a>
+
+    </div>
+
+  </div>
+  <a href="3rdchamber.html" class="morebtnmobile">Технически Параметри</a>
+</div>
+</section>
+
+
+  <section class="container-fluid background-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col col--12-of-12 col--centered>">
+        <h2>Предлагаме и обучение на персонал</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col col--6-of-12 col--centered">
+        <img class="icons" src="img/icons/teaching.svg" alt="teaching">
+        <!-- <a href="#" class="bottombtn">Научете Повече</a> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+  	<footer class="container-fluid site-footer">
+			<div class="row">
+				<div class="col col--12-of-12 fp">
+
+					<a href="index.html" class="current footerlogo"></a>
+					<p class="copyright">©2016 Всички права запазени.</p>
+					<a href="contacts.html" class="foterlink">Контакти</a>
+
+				</div>
+			</div>
+	</footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/youtube.js"></script>
+</body>
+</html>
